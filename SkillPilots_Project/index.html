@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillPilots | Career Path</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">✦</span> skillpilots<sup>®</sup></div>
+    <a class="nav-item">⌂ <span>Dashboard</span></a>
+    <div class="nav-label">PAGES</div>
+    <a class="nav-item">◉ <span>Self Assessment</span></a>
+    <a class="nav-item">▥ <span>College Assessment</span></a>
+    <a class="nav-item">▣ <span>Skill Assessment</span></a>
+    <a class="nav-item active">⑂ <span>Career Path</span></a>
+    <a class="nav-item">▣ <span>Mentor Connect</span></a>
+    <a class="nav-item">♧ <span>Mock Interview</span></a>
+    <a class="nav-item">▤ <span>Learning Materials</span></a>
+    <a class="nav-item">◎ <span>Opportunities</span></a>
+    <a class="nav-item">▤ <span>Resume</span></a>
+    <a class="nav-item">▣ <span>Applied Opportunities</span></a>
+    <a class="nav-item">♟ <span>Problem Statements</span></a>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="mobile-brand">✦ skillpilots</div>
+      <div class="top-actions"><button title="Theme" id="themeBtn">☾</button><button title="Notifications">♧<sup>9+</sup></button><button title="Documents">▢</button><div class="avatar">S</div></div>
+    </header>
+
+    <section class="content">
+      <div class="left-column">
+        <section class="panel schedule">
+          <div class="panel-heading"><div><span class="heading-icon">▣</span> <b>Learning Schedule</b> <small class="level">Beginner</small></div></div>
+          <div class="legend"><span class="done-dot"></span> Done <span class="today-dot"></span> Today <span class="upcoming-dot"></span> Upcoming</div>
+          <div class="days">
+            <div class="day done"><span>✓</span><b>1</b><small>Mon</small></div>
+            <div class="day done"><span>✓</span><b>2</b><small>Tue</small></div>
+            <div class="day done"><span>✓</span><b>3</b><small>Wed</small></div>
+            <div class="day done"><span>✓</span><b>4</b><small>Thu</small></div>
+            <div class="day done"><span>✓</span><b>5</b><small>Fri</small></div>
+          </div>
+          <div class="progress-label"><span>Learning progress</span><b>85%</b></div>
+          <div class="progress"><span></span></div>
+          <div class="stats"><div><strong>21</strong><small>Tasks completed</small><em>+5.4%</em></div><div><strong>17</strong><small>Current day</small></div></div>
+        </section>
+        <section class="panel roadmap">
+          <h3>🚀 Your Career Roadmap</h3>
+          <p>Build skills step by step and move closer to your career goals.</p>
+          <div class="roadmap-track"><span>1</span><i></i><span>2</span><i></i><span>3</span><i></i><span>4</span></div>
+        </section>
+      </div>
+
+      <div class="right-column">
+        <section class="panel focus">
+          <div class="focus-title">▣ <b>Today's Focus: Deploying the Full Stack App</b></div>
+          <p>Day 17 · 3 tasks</p>
+          <div class="task-card complete"><span>✓</span><div><b>Review the application structure</b><small>Completed</small></div><button>Completed</button></div>
+          <div class="task-card"><span>2</span><div><b>Run and test the application locally</b><small>Practice</small></div><button class="outline">Practice</button></div>
+          <div class="task-card project"><span>3</span><div><b>Deploy the application to Render (or Heroku) and verify the notes UI works in the cloud.</b><small>Project · Cloud deployment</small><button class="steps" id="openSteps">Steps</button><button class="submit">➤ Submit Project</button></div></div>
+        </section>
+        <section class="panel notes">
+          <h3>📌 Project checklist</h3>
+          <p>Complete the deployment tasks and verify all CRUD operations.</p>
+          <ul><li>Connect GitHub repository</li><li>Configure build and start commands</li><li>Set environment variables</li></ul>
+        </section>
+      </div>
+    </section>
+    <footer>© 2026 All Rights Reserved SkillPilots® Global Pvt. Ltd. | Designed &amp; Developed By SkillPilots® Global Pvt. Ltd. | Contact: +91-9156288817</footer>
+  </main>
+
+  <div class="overlay" id="stepsModal" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close" id="closeSteps" aria-label="Close">×</button>
+      <h2 id="modalTitle"><span>ⓘ</span> Task Implementation Steps</h2>
+      <p class="instruction">Deploy the application to Render (or Heroku) and verify the notes UI works in the cloud.</p>
+      <ol>
+        <li>Create a free Render account and link the GitHub repository.</li>
+        <li>Configure a new Java Web Service, selecting the correct build command (<code>./mvnw clean install</code>) and start command (<code>java -jar target/*.jar</code>).</li>
+        <li>Add environment variable for the SQLite file path if needed.</li>
+        <li>After deployment, open the provided URL and test all CRUD operations.</li>
+      </ol>
+      <button class="review" id="reviewSteps">I've Reviewed the Steps</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
